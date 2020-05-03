@@ -4,7 +4,7 @@ create table BasketBall.BasketballTeam
 (
     TeamId int not null IDENTITY(1,1) PRIMARY Key,
     Name NVARCHAR(128) not null,
-    ConfernceId int not null FOREIGN key REFERENCES BasketBall.Confernce(ConfernceId),
+    ConferenceId int not null FOREIGN key REFERENCES BasketBall.Conference(ConferenceId),
     UNIQUE
     (
         Name

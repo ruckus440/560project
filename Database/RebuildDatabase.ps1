@@ -1,6 +1,6 @@
 Param(
-   [string] $Server = "LAPTOP-TN62H4D5\SQLEXPRESS",
-   [string] $Database = "560 Project"
+   [string] $Server = "MIKE-PC2015",#LAPTOP-TN62H4D5\SQLEXPRESS
+   [string] $Database = "560Project"
 )
 
 # This script requires the SQL Server module for PowerShell.
@@ -24,7 +24,7 @@ Write-Host "Creating schema..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Schemas\Basketball.sql"
 
 Write-Host "Creating tables..."
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Tables\Basketball.Confernce.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Tables\Basketball.Conference.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Tables\Basketball.BasketballTeam.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Tables\Basketball.TeamPlayer.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "Database\Sql\Tables\Basketball.PlayerStats.sql"
