@@ -6,13 +6,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Sql\Schemas\Basketball.sql" />
+    <None Remove="Sql\Tables\Basketball.BasketballGame.sql" />
+    <None Remove="Sql\Tables\Basketball.BasketballTeam.sql" />
+    <None Remove="Sql\Tables\Basketball.Conference.sql" />
+    <None Remove="Sql\Tables\Basketball.GameTeam.sql" />
+    <None Remove="Sql\Tables\BasketBall.PlayerStats.sql" />
+    <None Remove="Sql\Tables\Basketball.TeamPlayer.sql" />
+    <None Remove="Sql\Tables\DropTables.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Schemas\Basketball.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.BasketballGame.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.BasketballTeam.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.Conference.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.GameTeam.sql" />
+    <EmbeddedResource Include="Sql\Tables\BasketBall.PlayerStats.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.TeamPlayer.sql" />
+    <EmbeddedResource Include="Sql\Tables\DropTables.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="DataAccess">
       <HintPath>..\..\DataAccess\obj\Debug\DataAccess.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Sql\Data\" />
     <Folder Include="Sql\Procedures\" />
   </ItemGroup>
 

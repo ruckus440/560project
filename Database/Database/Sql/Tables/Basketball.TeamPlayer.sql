@@ -6,6 +6,7 @@ Create table Basketball.TeamPlayer
     TeamId int not null FOREIGN key REFERENCES BasketBall.BasketballTeam(TeamId),
     FirstName NVARCHAR(32) not null,
     LastName NVARCHAR(64) not null,
+    JerseyNum INT not null,
     Position NVARCHAR(32) not null
 )
 END

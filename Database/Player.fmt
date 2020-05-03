@@ -1,5 +1,7 @@
 14.0
-3
-1       SQLCHAR             0       64      "\t"     3     FirstName              SQL_Latin1_General_CP1_CI_AS
-2       SQLCHAR             0       128     "\t"     4     LastName               SQL_Latin1_General_CP1_CI_AS
-3       SQLCHAR             0       64      "\r\n"   5     Position               SQL_Latin1_General_CP1_CI_AS
+5
+1       SQLCHAR             0       0      ""     0     PlayerId               ""
+2       SQLCHAR             0       0      ""     0     TeamId                 ""
+3       SQLCHAR             0       64      ","     3     FirstName              SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR             0       128     ","     4     LastName               SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR             0       64      "\r\n"   5     Position               SQL_Latin1_General_CP1_CI_AS
